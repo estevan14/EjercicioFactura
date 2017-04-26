@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Clases;
 
 import Clases.claseDomicilio;
@@ -13,7 +9,7 @@ import java.util.ArrayList;
  * @author Usuario
  */
 public class claseFacturas {
-    
+    //crear lista array 
     ArrayList<claseDomicilio> d = new ArrayList();
     ArrayList<claseLineItems> l = new ArrayList();
     ArrayList<claseProducto> p = new ArrayList();

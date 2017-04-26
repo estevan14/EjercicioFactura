@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Clases;
 
 public class claseLineItems {
@@ -23,7 +19,7 @@ public class claseLineItems {
     public void setCantidad(double cantidad) {
         this.cantidad = cantidad;
     }
-
+    //calcular el precio total
     public double getPrecioTotal(int cantidad, double precio) {
         double preciototal = 0;
         preciototal = cantidad * precio;

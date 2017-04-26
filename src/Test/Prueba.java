@@ -23,7 +23,9 @@ public class Prueba {
 
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
+        //crear un objeto de la factura
         claseFacturas objfacturas = new claseFacturas();
+        //declarar variables
         String nombre;
         String calle;
         String ciudad;
@@ -33,6 +35,7 @@ public class Prueba {
         double preciototal = 0;
         int cantidad;
         String si = "1";
+        //ingresar datos
         System.out.println("Ingrese Nombre");
         nombre = teclado.next();
         System.out.println("Ingrese Calle");
@@ -43,6 +46,7 @@ public class Prueba {
         Estado = teclado.next();
         claseDomicilio dos = new claseDomicilio(nombre, calle, ciudad, Estado);
         objfacturas.doimicilio(dos);
+        //opccion de ingresar as datos pero solo la condicion esta en 3
         while (si.equals("1")) {
             System.out.println("Descripcion");
             descripcion = teclado.next();
@@ -58,6 +62,7 @@ public class Prueba {
             System.out.println("Desea ingresar otro producto [1]Si No[2]");
             si = teclado.next();
         }
+        //presento los datos
         System.out.println(objfacturas.unir() + preciototal);
         try {
             File f = new File("Datos.txt");
